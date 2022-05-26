@@ -28,6 +28,7 @@ services:
       # - ./theme/dted.scss:/var/www/html/glpi/css/palettes/dted.scss
     environment:
       - TIMEZONE=America/Fortaleza
+      - VERSION_GLPI=9.5.7
     restart: unless-stopped
     networks:
       - rede
