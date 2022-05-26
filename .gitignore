@@ -1,2 +1,15 @@
 configs/mysql/database
-glpi/
+# glpi/
+glpi/files/_cache
+glpi/files/_cron
+glpi/files/_dumps
+glpi/files/_graphs
+glpi/files/_locales
+glpi/files/_lock
+glpi/files/_log
+glpi/files/_pictures
+glpi/files/_plugins
+glpi/files/_rss
+glpi/files/_sessions
+glpi/files/_tmp
+glpi/files/_uploads
