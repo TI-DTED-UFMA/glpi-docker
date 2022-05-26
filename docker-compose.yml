@@ -10,7 +10,7 @@ services:
       - ./configs/mysql/database:/var/lib/mysql
     env_file:
       - ./.env
-    restart: always
+    restart: unless-stopped
     networks:
       - rede
 
@@ -25,9 +25,11 @@ services:
       # - /configs/etc/timezone:/etc/timezone:ro
       # - /configs/etc/localtime:/etc/localtime:ro
       - ./glpi/:/var/www/html/glpi
+      # - ./theme/dted.scss:/var/www/html/glpi/css/palettes/dted.scss
     environment:
       - TIMEZONE=America/Fortaleza
-    restart: always
+      - VERSION_GLPI=9.5.7
+    restart: unless-stopped
     networks:
       - rede
 
