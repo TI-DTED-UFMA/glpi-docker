@@ -1,7 +1,7 @@
 version: "3.2"
 
 services:
-#MariaDB Container
+  #MariaDB Container
   mariadb:
     image: mariadb:10.7
     container_name: mariadb
@@ -14,19 +14,17 @@ services:
     networks:
       - rede
 
-#GLPI Container
+  #GLPI Container
   glpi:
     image: diouxx/glpi
-    container_name : glpi
+    container_name: glpi
     hostname: glpi
     ports:
       - "8075:80"
     volumes:
-      # - /configs/etc/timezone:/etc/timezone:ro
-      # - /configs/etc/localtime:/etc/localtime:ro
-      - ./glpi/:/var/www/html/glpi
-      - ./glpi-homolog/:/var/www/html/glpi-homolog
-      # - ./theme/dted.scss:/var/www/html/glpi/css/palettes/dted.scss
+      # - ./glpi/:/var/www/html/glpi
+      - ./glpi/:/var/www/html/glpi-homolog
+      # - ./configs/apache/000-default.conf:/etc/apache2/sites-available/000-default.conf
     environment:
       - TIMEZONE=America/Fortaleza
       - VERSION_GLPI=9.5.7
