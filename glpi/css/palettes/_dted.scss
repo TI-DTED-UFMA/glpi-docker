@@ -31,11 +31,11 @@
 /* ===== LOGIN ===== */
 
 #firstboxlogin {
-    background-color: #1B2F62;
+    background-color: #8D0333;
  }
  
  #logo_login {
-    background: #3A5693;
+    background: #8D0333;
  }
  
  #display-login {
@@ -43,22 +43,22 @@
  }
  
  #text-login {
-    background-color: #3A5693;
+    background-color: #8D0333;
     color: #FFF;
  }
  
  /* ====== GENERAL ====== */
  
  a, .btn-linkstyled {
-    color: #3A5693;
+    color: #8D0333;
  
     &:link {
-       color: #3A5693;
+       color: #8D0333;
     }
  }
  
  .ui-widget-content a {
-    color: #3A5693;
+    color: #8D0333;
  }
  
  .main_form tr.headerRow th {
@@ -68,7 +68,7 @@
  /* ====== HEADER ====== */
  
  #header_top {
-    background-color: #1B2F62;
+    background-color: #8D0333;
  }
  
  #c_preference a, #language_link > span {
@@ -81,7 +81,7 @@
  }
  
  #c_menu {
-    background-color: #3A5693;
+    background-color: #8D0333;
  }
  
  ul {
@@ -108,7 +108,7 @@
  
        ul li a {
           &:hover {
-             background: #3A5693;
+             background: #8D0333;
              color: #C7DBF5;
           }
  
