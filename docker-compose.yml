@@ -25,6 +25,7 @@ services:
       # - /configs/etc/timezone:/etc/timezone:ro
       # - /configs/etc/localtime:/etc/localtime:ro
       - ./glpi/:/var/www/html/glpi
+      - ./glpi-homolog/:/var/www/html/glpi-homolog
       # - ./theme/dted.scss:/var/www/html/glpi/css/palettes/dted.scss
     environment:
       - TIMEZONE=America/Fortaleza
